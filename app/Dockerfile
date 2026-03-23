@@ -1,17 +1,12 @@
-FROM node:18-alpine
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install dependencies first (layer caching)
-COPY package*.json ./
-RUN npm install --omit=dev
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application source
 COPY src/ ./src/
-
-# Create retry queue file if it doesn't exist
-RUN touch /app/retry_queue.json
 
 EXPOSE 3000
 
-CMD ["node", "src/index.js"]
+CMD ["python", "-m", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "3000"]
