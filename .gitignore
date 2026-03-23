@@ -1,5 +1,12 @@
-node_modules/
+__pycache__/
+*.py[cod]
+*.pyo
 .env
 *.log
+!events.log
 .DS_Store
+.venv/
+venv/
 dist/
+build/
+*.egg-info/
