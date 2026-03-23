@@ -11,8 +11,8 @@
 {"event_type":"BILLING_EVENT","event_id":"evt-011","timestamp":"2024-01-15T09:40:00Z","invoice_id":"inv-002","package_id":"pkg-out-of-order-123","amount":30.00,"customer_id":"cust-002","currency":"USD"}
 {"event_type":"PACKAGE_STATUS_CHANGE","event_id":"evt-012","timestamp":"2024-01-15T08:00:00Z","package_id":"pkg-complete-history-101","status":"PICKED_UP","driver_id":"drv-test-123","location":"Warehouse C"}
 {"event_type":"PACKAGE_STATUS_CHANGE","event_id":"evt-013","timestamp":"2024-01-15T10:00:00Z","package_id":"pkg-complete-history-101","status":"DELIVERED","driver_id":"drv-test-123","location":"Final Destination"}
-{"event_type":"DRIVER_LOCATION_UPDATE","event_id":"evt-014","timestamp":"2024-01-15T10:05:00Z","driver_id":"drv-test-123","latitude":17.395,"longitude":78.495,"zone_id":"zone-test-abc","package_id":"pkg-complete-history-101"}
 {"event_type":"BILLING_EVENT","event_id":"evt-015","timestamp":"2024-01-15T10:10:00Z","invoice_id":"inv-003","package_id":"pkg-complete-history-101","amount":45.00,"customer_id":"cust-003","currency":"USD"}
 THIS IS A MALFORMED LINE - NOT VALID JSON {{{}
 {"event_type":"PACKAGE_STATUS_CHANGE","event_id":"evt-016","timestamp":"2024-01-15T11:00:00Z","package_id":"pkg-late-001","status":"PICKED_UP","driver_id":"drv-456","location":"Warehouse D"}
+{"event_type":"PACKAGE_STATUS_CHANGE","event_id":"evt-rec-01","timestamp":"2024-01-15T12:00:00Z","package_id":"pkg-out-of-order-123","status":"DELIVERED","driver_id":"drv-456","location":"Final Stop"} 
 {"event_type":"PACKAGE_STATUS_CHANGE","event_id":"evt-rec-01","timestamp":"2024-01-15T12:00:00Z","package_id":"pkg-out-of-order-123","status":"DELIVERED","driver_id":"drv-456","location":"Final Stop"} 
